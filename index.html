@@ -29,7 +29,11 @@
         </ul>
         <div class="nav__open">
           <input type="checkbox" id="open-nav" />
-          <label for="open-nav">
+          <label
+            for="open-nav"
+            aria-label="open navigation"
+            aria-controls="primary-navigation"
+          >
             <svg class="hamburguer" viewBox="0 0 100 100" width="250">
               <rect
                 class="hamburguer__line hamburguer__line--top"
@@ -70,7 +74,10 @@
           <img
             src="/images/desktop/image-transform.jpg"
             alt="Transform"
-            srcset=""
+            srcset="
+              /images/desktop/image-transform.jpg 720w,
+              /images/mobile/image-transform.jpg  750w
+            "
           />
         </figure>
         <article class="article grid__item--2">
@@ -90,7 +97,10 @@
           <img
             src="/images/desktop/image-stand-out.jpg"
             alt="Transform"
-            srcset=""
+            srcset="
+              /images/desktop/image-stand-out.jpg 720w,
+              /images/mobile/image-stand-out.jpg  750w
+            "
           />
         </figure>
         <article class="article grid__item--4">
@@ -127,7 +137,7 @@
         <ul>
           <li class="testimony">
             <figure class="testimony__photo">
-              <img src="/images/image-emily.jpg" alt="Emily" srcset="" />
+              <img src="/images/image-emily.jpg" alt="Emily" />
             </figure>
             <p class="testimony__text">
               We put our trust in Sunnyside and they delivered, making sure our
@@ -138,7 +148,7 @@
           </li>
           <li class="testimony">
             <figure class="testimony__photo">
-              <img src="/images/image-thomas.jpg" alt="Thomas" srcset="" />
+              <img src="/images/image-thomas.jpg" alt="Thomas" />
             </figure>
             <p class="testimony__text">
               Sunnyside’s enthusiasm coupled with their keen interest in our
@@ -149,7 +159,7 @@
           </li>
           <li class="testimony">
             <figure class="testimony__photo">
-              <img src="/images/image-jennie.jpg" alt="Jennie" srcset="" />
+              <img src="/images/image-jennie.jpg" alt="Jennie" />
             </figure>
             <p class="testimony__text">
               Incredible end result! Our sales increased over 400% when we
@@ -165,28 +175,40 @@
           <img
             src="/images/desktop/image-gallery-milkbottles.jpg"
             alt="milkbottles"
-            srcset=""
+            srcset="
+              /images/desktop/image-gallery-milkbottles.jpg 720w,
+              /images/mobile/image-gallery-milkbottles.jpg  376w
+            "
           />
         </figure>
         <figure class="gallery__item">
           <img
             src="/images/desktop/image-gallery-orange.jpg"
             alt="orange"
-            srcset=""
+            srcset="
+              /images/desktop/image-gallery-orange.jpg 720w,
+              /images/mobile/image-gallery-orange.jpg  376w
+            "
           />
         </figure>
         <figure class="gallery__item">
           <img
             src="/images/desktop/image-gallery-cone.jpg"
             alt="cone"
-            srcset=""
+            srcset="
+              /images/desktop/image-gallery-cone.jpg 720w,
+              /images/mobile/image-gallery-cone.jpg  376w
+            "
           />
         </figure>
         <figure class="gallery__item">
           <img
             src="/images/desktop/image-gallery-sugarcubes.jpg"
             alt="sugarcubes"
-            srcset=""
+            srcset="
+              /images/desktop/image-gallery-sugarcubes.jpg 720w,
+              /images/mobile/image-gallery-sugarcubes.jpg  376w
+            "
           />
         </figure>
       </div>
