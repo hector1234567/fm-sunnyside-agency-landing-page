@@ -1,0 +1,34 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  @include t.text-10;
+  background-color: c.$White;
+  color: c.$Grey-550;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 144rem;
+
+  @media (max-width: t.$tablet) {
+    max-width: 76.8rem;
+  }
+}

@@ -1,0 +1,32 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.hamburguer {
+  width: 3.3rem;
+  fill: c.$White;
+
+  &__line {
+    transition: y 150ms ease-in 150ms, rotate 150ms ease-in, opacity 0ms 150ms;
+    transform-origin: center;
+  }
+}
+
+body:has(#open-nav:checked) .hamburguer {
+  &__line {
+    transition: y 150ms ease-in, rotate 150ms ease-in 150ms, opacity 0ms 150ms;
+
+    &--top {
+      y: 45;
+      rotate: 45deg;
+    }
+
+    &--middle {
+      opacity: 0;
+    }
+
+    &--bottom {
+      y: 45;
+      rotate: -45deg;
+    }
+  }
+}

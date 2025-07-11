@@ -1,0 +1,56 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 35rem;
+  min-height: 34.8rem;
+  text-align: center;
+
+  &__photo {
+    height: 7.2rem;
+    width: 7.2rem;
+    border-radius: 999rem;
+    overflow: hidden;
+    margin-bottom: 5.8rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    @include t.text-10;
+    color: c.$Grey-600;
+    margin-bottom: auto;
+
+    @media (max-width: t.$tablet) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__user-name {
+    @include t.text-7;
+    color: c.$Grey-950;
+    margin-bottom: 0.8rem;
+  }
+
+  &__user-position {
+    @include t.text-12;
+    color: c.$Grey-400;
+  }
+
+  @media (max-width: t.$tablet) {
+    max-width: 60rem;
+    min-height: unset;
+  }
+
+  @media (max-width: t.$mobile) {
+    max-width: 33rem;
+  }
+}

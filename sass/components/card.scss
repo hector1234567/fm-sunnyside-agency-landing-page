@@ -1,0 +1,52 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+
+  & > * {
+    max-width: 33.9rem;
+  }
+
+  &__heading {
+    @include t.text-5;
+    margin-bottom: 3.2rem;
+  }
+
+  &__text {
+    @include t.text-11;
+    margin-bottom: 5.6rem;
+  }
+
+  &--1 {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .card__heading {
+      color: c.$Green-800;
+    }
+
+    .card__text {
+      color: c.$Green-600;
+    }
+  }
+
+  &--2 {
+    background-image: url(/images/desktop/image-photography.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .card__heading {
+      color: c.$Blue-950;
+    }
+
+    .card__text {
+      color: c.$Blue-800;
+    }
+  }
+}

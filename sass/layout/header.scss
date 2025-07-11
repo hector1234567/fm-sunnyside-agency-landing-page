@@ -1,0 +1,68 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80rem;
+  background-image: url(/images/desktop/image-header.jpg);
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  background-color: c.$Blue-500;
+
+  &__heading {
+    @include t.text-1;
+    color: c.$White;
+    margin-bottom: 7.6rem;
+    text-transform: uppercase;
+
+    @media (max-width: t.$tablet) {
+      max-width: 41.4rem;
+    }
+
+    @media (max-width: t.$mobile) {
+      @include t.text-2;
+      max-width: 32.7rem;
+    }
+  }
+
+  &__down-link {
+    padding: 2rem;
+    align-self: center;
+    animation: vibration 2s ease-in-out infinite;
+
+    &:hover {
+      animation: vibration 1s ease-in-out infinite;
+    }
+  }
+
+  @media (max-width: t.$tablet) {
+    background-size: cover;
+  }
+
+  @media (max-width: t.$mobile) {
+    height: 53.8rem;
+  }
+}
+
+@keyframes vibration {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5rem);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

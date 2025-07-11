@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,100..900&display=swap");
+
+$tablet: 1140px;
+$mobile: 640px;
+
+@mixin text-1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 5.6rem;
+  line-height: 125%;
+  letter-spacing: 0.9rem;
+  font-weight: 900;
+}
+
+@mixin text-2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 4.2rem;
+  line-height: 125%;
+  letter-spacing: 0.6rem;
+  font-weight: 900;
+}
+
+@mixin text-3 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 4rem;
+  line-height: 125%;
+  font-weight: 900;
+}
+
+@mixin text-4 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 3.2rem;
+  line-height: 125%;
+  font-weight: 900;
+}
+
+@mixin text-5 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.8rem;
+  line-height: 125%;
+  font-weight: 900;
+}
+
+@mixin text-6 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  line-height: 125%;
+  letter-spacing: 0.4rem;
+  font-weight: 900;
+}
+
+@mixin text-7 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.8rem;
+  line-height: 125%;
+  font-weight: 900;
+}
+
+@mixin text-8 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.5rem;
+  line-height: 165%;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+}
+
+@mixin text-9 {
+  font-family: "Barlow", serif;
+  font-size: 2rem;
+  line-height: 125%;
+  font-weight: 600;
+}
+
+@mixin text-10 {
+  font-family: "Barlow", serif;
+  font-size: 1.8rem;
+  line-height: 165%;
+  font-weight: 600;
+}
+
+@mixin text-11 {
+  font-family: "Barlow", serif;
+  font-size: 1.6rem;
+  line-height: 170%;
+  font-weight: 600;
+}
+
+@mixin text-12 {
+  font-family: "Barlow", serif;
+  font-size: 1.4rem;
+  line-height: 180%;
+  font-weight: 600;
+}

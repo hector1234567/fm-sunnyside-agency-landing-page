@@ -1,0 +1,52 @@
+@use "../base/colors" as c;
+@use "../base/typography" as t;
+
+.footer {
+  background-color: c.$Green-300;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.35rem 0;
+
+  &__logo {
+    margin-bottom: 4rem;
+
+    img {
+      width: 17rem;
+    }
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 5.6rem;
+    margin-bottom: 8rem;
+  }
+
+  &__link {
+    @include t.text-10;
+    color: c.$Green-500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: c.$White;
+    }
+  }
+
+  &__social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+
+    svg {
+      fill: c.$Green-500;
+      transition: fill 0.3s ease;
+
+      &:hover {
+        fill: c.$White;
+      }
+    }
+  }
+}
