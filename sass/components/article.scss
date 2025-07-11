@@ -21,7 +21,6 @@
 
   &__heading {
     @include t.text-3;
-    text-align: center;
     margin-bottom: 3.2rem;
     color: c.$Grey-950;
   }
