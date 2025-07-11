@@ -255,7 +255,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 4rem 10rem 4rem;
+  padding: 4.5rem 4rem 12rem 4rem;
 }
 @media (max-width: 640px) {
   .nav {
